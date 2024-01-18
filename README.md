@@ -12,7 +12,7 @@ Before diving into note-taking, users must securely log-in an account via google
 
 ### 2. CRUD(Create, Read, Update, Delete)
 
-Users should be able to create, edit, and view, delete notes with ease. 
+Users should be able to create, edit, view, and delete notes with ease. 
 
 ## Getting Started
 
