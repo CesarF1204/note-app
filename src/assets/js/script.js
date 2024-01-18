@@ -63,40 +63,4 @@ $(document).ready(() => {
             return false;
         });
     });
-
-
-    // $(document).on("click", '.logout', function() {
-    //     const confirmLogout = confirm("Are you sure you want to logout?");
-    //     // If the user clicks "OK" in the confirmation dialog
-    //     if(confirmLogout){
-    //         // Redirect to the specified URL
-    //         window.location.href = "/";
-    //     }
-    //     else{
-    //         window.location.href = "/notes";
-    //     }   
-    // });
-
-    // $('.logout').on('click', function (e) {
-    //     e.preventDefault(); // Prevent the default behavior of the anchor link
-
-    //     const confirmLogout = confirm("Are you sure you want to logout?");
-        
-    //     // If the user clicks "OK" in the confirmation dialog
-    //     if (confirmLogout) {
-    //         // Redirect to the specified URL
-    //         window.location.href = "/";
-    //     } else {
-    //         // Optionally, you can redirect to another URL or perform other actions
-    //         // when the user clicks "Cancel" in the confirmation dialog
-    //         window.location.href = "/notes";
-    //     }
-    // });
-
-
-    // $('.logout').on('click', function (e) {
-    //     // window.location.href = "/";
-    //     window.location.replace("http://localhost:3000");
-    // });
-
 });

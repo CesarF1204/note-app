@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notes</title>
+    <title>Note Taking App</title>
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="/js/script.js"></script>
@@ -21,44 +21,40 @@
         <input type="submit" value="Add Note">
     </form>
     
-    <% if(notes.length){ %>
     <h2>All Notes</h2>
-
-    <div id="note_data">
-        <% for(const note of notes){ %>
-            <div class="note_<%= note.id %>">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Title</th>
-                            <th>Content</th>
-                            <th id="th_actions">Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><%= note.id %></td>
-                            <td class="note_title" data-id="<%= note.id %>"><%= note.title %></td>
-                            <td class="note_content" data-id="<%= note.id %>"><%= note.content %></td>
-                            <td id="actions_<%= note.id %>"><% if(user_session.email === note.created_by){ %>
-                                <form class="delete_form" action="/notes/<%= note.id %>" method="post">
-                                    <input type="hidden" name="id" value="<%= note.id %>">
-                                    <input type="submit" value="Delete">
-                                </form>
-                
-                                <button id="edit_note_<%= note.id %>" class="edit_note" data-id="<%= note.id %>">Edit</button>
-                                
-                
-                                <%  } %> </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        <% } %>
-    </div>
+    <% if(notes.length === 0){ %>
+        <p>No results.</p>
     <% } %>
 
+    <div id="note_data">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Content</th>
+                    <th id="th_actions">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% for(const note of notes){ %>
+                    <tr>
+                        <td><%= note.id %></td>
+                        <td class="note_title" data-id="<%= note.id %>"><%= note.title %></td>
+                        <td class="note_content" data-id="<%= note.id %>"><%= note.content %></td>
+                        <td id="actions_<%= note.id %>"><% if(user_session.email === note.created_by){ %>
+                            <form class="delete_form" action="/notes/delete/<%= note.id %>" method="post">
+                                <input type="hidden" name="id" value="<%= note.id %>">
+                                <input type="submit" value="Delete">
+                            </form>
+                            <button id="edit_note_<%= note.id %>" class="edit_note" data-id="<%= note.id %>">Edit</button>
+                            <%  } %>
+                        </td>
+                    </tr>
+                <% } %>
+            </tbody>
+        </table>
+    </div>
     <a class="logout" href="/">Logout</a>
 </body>
 </html>

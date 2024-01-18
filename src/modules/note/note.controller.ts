@@ -88,7 +88,7 @@ export class NoteController {
     * @memberOf NoteController
     * @author Cesar
     */
-    @Post('/:id')
+    @Post('/delete/:id')
     async deleteNote(@Param('id') id: string): Promise<Note> {
         return this.noteService.deleteById(id);
     }
