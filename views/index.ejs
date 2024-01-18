@@ -25,7 +25,8 @@
     <% if(notes.length === 0){ %>
         <p>No results.</p>
     <% } %>
-
+    
+    <% if(notes.length > 0){ %>
     <div id="note_data">
         <table>
             <thead>
@@ -55,6 +56,8 @@
             </tbody>
         </table>
     </div>
+    <% } %>
+
     <a class="logout" href="/">Logout</a>
 </body>
 </html>
