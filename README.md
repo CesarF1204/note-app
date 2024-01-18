@@ -17,18 +17,19 @@ Users should be able to create, edit, and view, delete notes with ease.
 ## Getting Started
 
 1. **Installation:**
-   - Fork or download the GitHub repository [https://github.com/CesarF1204/note-app](https://github.com/CesarF1204/note-app).
-   - Open your terminal and navigate to the project directory.
+   - Create a folder first, name it anything you want. Then go to the folder directory.
+   - Fork, pull or download the GitHub repository [https://github.com/CesarF1204/note-app](https://github.com/CesarF1204/note-app).
+   - Open your terminal and navigate to the project directory. Ex. `git pull https://github.com/CesarF1204/note-app`
    - Run the command `npm install` to install the required packages and dependencies.
-   - Get the .env file provided by the owner and save it on the root folder.
+   - Get the `.env` file provided by the owner and save it on the root folder.
 
-2. **Running the App Locally:**
+3. **Running the App Locally:**
    - After installing the dependencies, run the command `npm run start:dev` in your terminal.
    - Open your web browser and go to [http://localhost:3000](http://localhost:3000).
    - You will be redirected to Google Authentication.
    - Log in via Google to access the Note App.
 
-3. **Creating Notes:**
+4. **Creating Notes:**
    - Once authenticated, you can create a new note by entering anything in the title and content fields.
    - Click the "Add Note" button to add the note.
    - The added note will be displayed in the "All Notes" list.
