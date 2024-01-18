@@ -20,6 +20,7 @@ Users should be able to create, edit, and view, delete notes with ease.
    - Fork or download the GitHub repository [https://github.com/CesarF1204/note-app](https://github.com/CesarF1204/note-app).
    - Open your terminal and navigate to the project directory.
    - Run the command `npm install` to install the required packages and dependencies.
+   - Get the .env file provided by the owner and save it on the root folder.
 
 2. **Running the App Locally:**
    - After installing the dependencies, run the command `npm run start:dev` in your terminal.
