@@ -22,7 +22,12 @@ Users should be able to create, edit, and view, delete notes with ease.
    - Open your terminal and navigate to the project directory. Ex. `git pull https://github.com/CesarF1204/note-app`
    - Run the command `npm install` to install the required packages and dependencies.
    - Get the `.env` file provided by the owner and save it on the root folder.
-
+     
+3. **Creating Database in MongoDB   :**
+   - Connect to mongodb://localhost:27017 and create database in MongoDB.
+   - Database name: note-app
+   - Collections: notes and users
+   
 3. **Running the App Locally:**
    - After installing the dependencies, run the command `npm run start:dev` in your terminal.
    - Open your web browser and go to [http://localhost:3000](http://localhost:3000).
@@ -34,13 +39,13 @@ Users should be able to create, edit, and view, delete notes with ease.
    - Click the "Add Note" button to add the note.
    - The added note will be displayed in the "All Notes" list.
 
-3. **Deleting Notes:**
+5. **Deleting Notes:**
    - To delete a note, navigate to the "All Notes" list
    - Navigate to the "All Notes" list.
    - "Delete" button will show only on the notes that you added and have access.
    - Find the note you want to delete, and click the "Delete" button.
 
-3. **Editing and Updating Notes:**
+6. **Editing and Updating Notes:**
    - To edit a note, navigate to the "All Notes" list.
    - "Edit" button will show only on the notes that you added and have access.
    - Find the note you want to edit, and click the "Edit" button.
