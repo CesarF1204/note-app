@@ -1,73 +1,45 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# Note App README
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+## Overview
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+Welcome to Note App! This application is designed to help users organize and manage their notes efficiently.
 
-## Description
+## Features
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+### 1. User Authentication
 
-## Installation
+Before diving into note-taking, users must securely log-in an account via google. This ensures that their notes are private and accessible only to them.
 
-```bash
-$ npm install
-```
+### 2. CRUD(Create, Read, Update, Delete)
 
-## Running the app
+Users should be able to create, edit, and view, delete notes with ease. 
 
-```bash
-# development
-$ npm run start
+## Getting Started
 
-# watch mode
-$ npm run start:dev
+1. **Installation:**
+   - Fork or download the GitHub repository [https://github.com/CesarF1204/note-app](https://github.com/CesarF1204/note-app).
+   - Open your terminal and navigate to the project directory.
+   - Run the command `npm install` to install the required packages and dependencies.
 
-# production mode
-$ npm run start:prod
-```
+2. **Running the App Locally:**
+   - After installing the dependencies, run the command `npm run start:dev` in your terminal.
+   - Open your web browser and go to [http://localhost:3000](http://localhost:3000).
+   - You will be redirected to Google Authentication.
+   - Log in via Google to access the Note App.
 
-## Test
+3. **Creating Notes:**
+   - Once authenticated, you can create a new note by entering anything in the title and content fields.
+   - Click the "Add Note" button to add the note.
+   - The added note will be displayed in the "All Notes" list.
 
-```bash
-# unit tests
-$ npm run test
+3. **Deleting Notes:**
+   - To delete a note, navigate to the "All Notes" list
+   - Navigate to the "All Notes" list.
+   - "Delete" button will show only on the notes that you added and have access.
+   - Find the note you want to delete, and click the "Delete" button.
 
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+3. **Editing and Updating Notes:**
+   - To edit a note, navigate to the "All Notes" list.
+   - "Edit" button will show only on the notes that you added and have access.
+   - Find the note you want to edit, and click the "Edit" button.
+   - Make changes to the title or content, then click the "Update" button to save the changes.
