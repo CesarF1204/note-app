@@ -52,6 +52,6 @@ export class UserController {
         /* This will destroy the session */
         req.session.destroy()
         /* Redirecting the user to the notes page after successful logout */
-        return res.redirect('http://localhost:3000/notes');
+        return res.redirect('/');
     }
 }

@@ -45,6 +45,6 @@ export class UserService {
         }
         
         /* Redirecting the user to the notes page after successful login */
-        return res.redirect('http://localhost:3000/notes');
+        return res.redirect(`/notes`);
     }
 }

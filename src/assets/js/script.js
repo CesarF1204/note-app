@@ -18,7 +18,7 @@ $(document).ready(() => {
                                         </form>
             </div>                        
             `);
-            window.location.href = "http://localhost:3000/notes";
+            window.location.href = "/notes";
         }, 'json');
 
         return false;
@@ -28,7 +28,7 @@ $(document).ready(() => {
     $('.delete_form').on('submit', function() {
         $.post($(this).attr('action'), $($(this)).serialize(), (data) => {
             $(`.note_${data.id}`).remove();
-            window.location.href = "http://localhost:3000/notes";
+            window.location.href = "/notes";
             
         }, 'json');
         return false;
@@ -58,7 +58,7 @@ $(document).ready(() => {
             }
 
             $.post($(this).attr('action'), $($(this)).serialize(), (data) => {
-                window.location.href = "http://localhost:3000/notes";
+                window.location.href = "/notes";
             }, 'json');
             return false;
         });
